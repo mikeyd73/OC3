@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_topic_language">
+    <sys_cb_topic_language action="INSERT_OR_UPDATE">
+        <cb_topic_id display_value="Unlock account">f5d4522d1b92895055d178cf034bcbc2</cb_topic_id>
+        <language_code>en</language_code>
+        <nlu_entities>[]</nlu_entities>
+        <nlu_intent>Unlock Account</nlu_intent>
+        <nlu_intent_label>Unlock Account</nlu_intent_label>
+        <nlu_model>ml_x_saic4_x_saic4_iva_access_global_7c30ca4adbaa85d0e6cb93afaa9619b0</nlu_model>
+        <nlu_model_label>Grant Access</nlu_model_label>
+        <nlu_provider>64c023c17300330021a044764df6a70e</nlu_provider>
+        <sys_class_name>sys_cb_topic_language</sys_class_name>
+        <sys_created_by>adminjon</sys_created_by>
+        <sys_created_on>2022-03-18 16:49:29</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>f7d38ff51b920d5055d178cf034bcb7a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="IVA Access Content Pack" source="x_saic4_iva_access">bb985597db8e8910e6cb93afaa96199c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="IVA Access Content Pack">bb985597db8e8910e6cb93afaa96199c</sys_scope>
+        <sys_update_name>sys_cb_topic_language_f7d38ff51b920d5055d178cf034bcb7a</sys_update_name>
+        <sys_updated_by>adminjon</sys_updated_by>
+        <sys_updated_on>2022-07-14 18:25:06</sys_updated_on>
+    </sys_cb_topic_language>
+</record_update>

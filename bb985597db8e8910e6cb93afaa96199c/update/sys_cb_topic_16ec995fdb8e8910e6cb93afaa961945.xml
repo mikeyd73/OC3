@@ -1,0 +1,1131 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_topic">
+    <sys_cb_topic action="INSERT_OR_UPDATE">
+        <applicability/>
+        <applicability_mode>query</applicability_mode>
+        <auto_resolution_enabled>false</auto_resolution_enabled>
+        <autopilot_topic>false</autopilot_topic>
+        <category/>
+        <channels/>
+        <connect_queue/>
+        <description>Password Reset</description>
+        <expose_on_palette>false</expose_on_palette>
+        <flexible_conversation_switching>false</flexible_conversation_switching>
+        <graph>{
+  "graph_api_version": "1.0.36",
+  "goals": {
+    "primary": {
+      "id": "primary",
+      "trigger": {
+        "type": "primary"
+      },
+      "name": "primary",
+      "applicability": "",
+      "description": "",
+      "nodes": {
+        "3a988ab0450541f48548ac1d6f85895a": {
+          "id": "3a988ab0450541f48548ac1d6f85895a",
+          "stepType": "Start",
+          "name": "Start",
+          "greetingResponse": {
+            "mode": "simple",
+            "value": ""
+          }
+        },
+        "93458b2f5c94417d81853c93c44ee280": {
+          "id": "93458b2f5c94417d81853c93c44ee280",
+          "stepType": "TerminateGoal",
+          "name": "End",
+          "confirmationMessage": {
+            "mode": "simple",
+            "value": ""
+          }
+        },
+        "61b1b891e59449d2a3f3103e8f9e0f96": {
+          "stepType": "ChoicePrompt",
+          "name": "Intro",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Do you want to change your password"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "variableId": "99af1cf8799944d1a2129e9b0e85ecff",
+          "id": "61b1b891e59449d2a3f3103e8f9e0f96",
+          "hasCardHeader": false,
+          "cardMetadata": {
+            "mode": "card",
+            "metadataScript": "",
+            "cardTemplate": "",
+            "cardFields": {},
+            "cardDefinition": {}
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false
+        },
+        "4102bbb8bd0d486a855508fe83c8ff4e": {
+          "id": "4102bbb8bd0d486a855508fe83c8ff4e",
+          "stepType": "Decision",
+          "name": "Decision"
+        },
+        "0a40c633ff9d47b29ca1c8516f1fd1da": {
+          "stepType": "ChoicePrompt",
+          "name": "System",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Where would you like to change your password?"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "variableId": "c201b96735af477b9d24bc277cd144f8",
+          "id": "0a40c633ff9d47b29ca1c8516f1fd1da",
+          "hasCardHeader": false,
+          "cardMetadata": {
+            "mode": "card",
+            "metadataScript": "",
+            "cardTemplate": "",
+            "cardFields": {},
+            "cardDefinition": {}
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false
+        },
+        "80d3c6c2fd0041b68622cd56204d30c1": {
+          "id": "80d3c6c2fd0041b68622cd56204d30c1",
+          "stepType": "Decision",
+          "name": "Decision"
+        },
+        "87c85de7dbf44ef2a1ad827f6da832ef": {
+          "stepType": "ChoicePrompt",
+          "name": "Service Needed Yourself",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Who needs the password reset"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "variableId": "2159e7743c334a9097fc5df3e374de3d",
+          "id": "87c85de7dbf44ef2a1ad827f6da832ef",
+          "hasCardHeader": false,
+          "cardMetadata": {
+            "mode": "card",
+            "metadataScript": "",
+            "cardTemplate": "",
+            "cardFields": {},
+            "cardDefinition": {}
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false
+        },
+        "78a06bb1772a4552920eed410116400c": {
+          "id": "78a06bb1772a4552920eed410116400c",
+          "stepType": "Decision",
+          "name": "Decision"
+        },
+        "a95aed4a4d354f019b3982dbcde67055": {
+          "id": "a95aed4a4d354f019b3982dbcde67055",
+          "name": "Change Password Action",
+          "invocationType": "action",
+          "stepType": "FlowAction",
+          "actionSpoke": "61a9cb3ddb162300314873568c9619bf",
+          "actionSpokeAction": "98e4eb5273eb2300d49c2ea3c4f6a719",
+          "actionWaitType": "sync",
+          "actionRunAs": "session_user",
+          "actionSecureField": true,
+          "actionSelectSecureField": "password",
+          "actionPromptSecureField": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Please enter a new password"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "actionConfirmPromptSecureField": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Please confirm your new password"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "actionNonSecureChannelMessage": {
+            "mode": "simple",
+            "value": "This action is not supported on this channel."
+          },
+          "actionInputs": {
+            "input-user": {
+              "value": "{{vaInputs.user}}",
+              "mode": "data_pill"
+            }
+          },
+          "actionOutputs": {
+            "output-status": [
+              {
+                "id": "cd12052ea88f40fa9e81acb9c8f01c2b",
+                "mapping": "Status",
+                "value": "Status",
+                "disabled": false,
+                "type": "choice",
+                "choices": [
+                  {
+                    "label": "Success",
+                    "value": "Success",
+                    "order": 0
+                  },
+                  {
+                    "label": "Error",
+                    "value": "Error",
+                    "order": 1
+                  }
+                ]
+              }
+            ],
+            "output-error_message": [
+              {
+                "id": "337395a1fcb1451fb7a969432876fa17",
+                "mapping": "Error Message",
+                "value": "Error Message",
+                "disabled": false,
+                "type": "string"
+              }
+            ],
+            "output-__action_status__": [
+              {
+                "id": "7d576b1ecc06456ebc07266e552ec1f9",
+                "mapping": "Action Status",
+                "value": "Action Status",
+                "disabled": false,
+                "type": "object"
+              }
+            ],
+            "output-__dont_treat_as_error__": [
+              {
+                "id": "20489e798cf64e5cb6c675772f617641",
+                "mapping": "Don't Treat as Error",
+                "value": "Don't Treat as Error",
+                "disabled": false,
+                "type": "boolean"
+              }
+            ]
+          },
+          "actionDefinition": {
+            "id": "98e4eb5273eb2300d49c2ea3c4f6a719",
+            "latest_snapshot_id": "98e4eb5273eb2300d49c2ea3c4f6a719",
+            "type": "action",
+            "name": "update_password",
+            "label": "Update Password",
+            "scope_id": "61a9cb3ddb162300314873568c9619bf",
+            "description": "&lt;html&gt;&lt;/html&gt;&lt;p&gt;Update a local ServiceNow user&amp;#39;s password.&lt;/p&gt;\n &lt;p&gt;&lt;b&gt;Inputs:&lt;/b&gt;\n  &lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;b&gt;User&lt;/b&gt; - User Record.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Password&lt;/b&gt; - The new password the user wants to set.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Force Password Change&lt;/b&gt; - Forces the user to change password on next login.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Unlock Account&lt;/b&gt; - Unlocks the user if account is locked.&lt;/li&gt;&lt;/ul&gt;\n \n \n &lt;p&gt;&lt;b&gt;Outputs:&lt;/b&gt;\n  &lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;b&gt;Status&lt;/b&gt; - Will be set to &amp;#39;Success&amp;#39; if the request succeeds or &amp;#39;Error&amp;#39; if a failure occurs.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Error Message&lt;/b&gt; - Reason for error. Populated only when an error occurs.&lt;/li&gt;&lt;/ul&gt;\n \n &lt;p&gt;&lt;b&gt;Error Messages:&lt;/b&gt;\n  &lt;/p&gt;&lt;ul&gt;&lt;li&gt;Invalid User Record&lt;/li&gt;&lt;/ul&gt;\n",
+            "category": "ServiceNow User Management",
+            "parameters_have_loaded": true,
+            "input_parameters": [
+              {
+                "supported_input_modes": [
+                  "script",
+                  "data_pill",
+                  "data_entry"
+                ],
+                "name": "user",
+                "label": "User",
+                "type": "reference",
+                "order": 1,
+                "required": true,
+                "query": "",
+                "table": "sys_user"
+              },
+              {
+                "supported_input_modes": [
+                  "script",
+                  "data_pill"
+                ],
+                "name": "password",
+                "label": "Password",
+                "type": "password2",
+                "order": 2,
+                "required": true
+              },
+              {
+                "supported_input_modes": [
+                  "script",
+                  "data_pill",
+                  "data_entry"
+                ],
+                "name": "force_password_change",
+                "label": "Force Password Change",
+                "type": "boolean",
+                "order": 3,
+                "required": false
+              },
+              {
+                "supported_input_modes": [
+                  "script",
+                  "data_pill",
+                  "data_entry"
+                ],
+                "name": "unlock_account",
+                "label": "Unlock Account",
+                "type": "boolean",
+                "order": 4,
+                "required": false
+              }
+            ],
+            "output_parameters": [
+              {
+                "name": "status",
+                "label": "Status",
+                "type": "choice",
+                "order": 1,
+                "required": false,
+                "choices": [
+                  {
+                    "label": "Success",
+                    "value": "Success",
+                    "order": 0
+                  },
+                  {
+                    "label": "Error",
+                    "value": "Error",
+                    "order": 1
+                  }
+                ]
+              },
+              {
+                "name": "error_message",
+                "label": "Error Message",
+                "type": "string",
+                "order": 2,
+                "required": false
+              },
+              {
+                "name": "__action_status__",
+                "label": "Action Status",
+                "type": "object",
+                "order": 2,
+                "required": false
+              },
+              {
+                "name": "__dont_treat_as_error__",
+                "label": "Don't Treat as Error",
+                "type": "boolean",
+                "order": 3,
+                "required": false
+              }
+            ]
+          },
+          "subflowSecureField": false,
+          "subflowSelectSecureField": "",
+          "subflowPromptSecureField": {
+            "mode": "simple",
+            "value": ""
+          },
+          "subflowConfirmPromptSecureField": {
+            "mode": "simple",
+            "value": ""
+          },
+          "subflowNonSecureChannelMessage": {
+            "mode": "simple",
+            "value": "This action is not supported on this channel."
+          },
+          "variableIds": [
+            "cd12052ea88f40fa9e81acb9c8f01c2b",
+            "337395a1fcb1451fb7a969432876fa17",
+            "7d576b1ecc06456ebc07266e552ec1f9",
+            "20489e798cf64e5cb6c675772f617641"
+          ],
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        },
+        "88f1540e5b5d45aca2f16870cfffc777": {
+          "id": "88f1540e5b5d45aca2f16870cfffc777",
+          "name": "Change Password for Someone Else",
+          "invocationType": "action",
+          "stepType": "FlowAction",
+          "actionSpoke": "61a9cb3ddb162300314873568c9619bf",
+          "actionSpokeAction": "98e4eb5273eb2300d49c2ea3c4f6a719",
+          "actionWaitType": "sync",
+          "actionRunAs": "session_user",
+          "actionSecureField": true,
+          "actionSelectSecureField": "password",
+          "actionPromptSecureField": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Please enter a password"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "actionConfirmPromptSecureField": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Please confirm your password"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "actionNonSecureChannelMessage": {
+            "mode": "simple",
+            "value": "This action is not supported on this channel."
+          },
+          "actionInputs": {
+            "input-user": {
+              "value": "{{vaInputs.user}}",
+              "mode": "data_pill"
+            }
+          },
+          "actionOutputs": {
+            "output-status": [
+              {
+                "id": "b4f4956c56ac4ae99a8ff60fca1a7076",
+                "mapping": "Status",
+                "value": "Status",
+                "disabled": false,
+                "type": "choice",
+                "choices": [
+                  {
+                    "label": "Success",
+                    "value": "Success",
+                    "order": 0
+                  },
+                  {
+                    "label": "Error",
+                    "value": "Error",
+                    "order": 1
+                  }
+                ]
+              }
+            ],
+            "output-error_message": [
+              {
+                "id": "abb20cf6b6b440329802c1bf3cb38748",
+                "mapping": "Error Message",
+                "value": "Error Message",
+                "disabled": false,
+                "type": "string"
+              }
+            ],
+            "output-__action_status__": [
+              {
+                "id": "7dd690e26da040438dd39ff857fcb536",
+                "mapping": "Action Status",
+                "value": "Action Status",
+                "disabled": false,
+                "type": "object"
+              }
+            ],
+            "output-__dont_treat_as_error__": [
+              {
+                "id": "72e38285d63048f9a74ea8b3bf919576",
+                "mapping": "Don't Treat as Error",
+                "value": "Don't Treat as Error",
+                "disabled": false,
+                "type": "boolean"
+              }
+            ]
+          },
+          "actionDefinition": {
+            "id": "98e4eb5273eb2300d49c2ea3c4f6a719",
+            "latest_snapshot_id": "98e4eb5273eb2300d49c2ea3c4f6a719",
+            "type": "action",
+            "name": "update_password",
+            "label": "Update Password",
+            "scope_id": "61a9cb3ddb162300314873568c9619bf",
+            "description": "&lt;html&gt;&lt;/html&gt;&lt;p&gt;Update a local ServiceNow user&amp;#39;s password.&lt;/p&gt;\n &lt;p&gt;&lt;b&gt;Inputs:&lt;/b&gt;\n  &lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;b&gt;User&lt;/b&gt; - User Record.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Password&lt;/b&gt; - The new password the user wants to set.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Force Password Change&lt;/b&gt; - Forces the user to change password on next login.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Unlock Account&lt;/b&gt; - Unlocks the user if account is locked.&lt;/li&gt;&lt;/ul&gt;\n \n \n &lt;p&gt;&lt;b&gt;Outputs:&lt;/b&gt;\n  &lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;b&gt;Status&lt;/b&gt; - Will be set to &amp;#39;Success&amp;#39; if the request succeeds or &amp;#39;Error&amp;#39; if a failure occurs.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Error Message&lt;/b&gt; - Reason for error. Populated only when an error occurs.&lt;/li&gt;&lt;/ul&gt;\n \n &lt;p&gt;&lt;b&gt;Error Messages:&lt;/b&gt;\n  &lt;/p&gt;&lt;ul&gt;&lt;li&gt;Invalid User Record&lt;/li&gt;&lt;/ul&gt;\n",
+            "category": "ServiceNow User Management",
+            "parameters_have_loaded": true,
+            "input_parameters": [
+              {
+                "supported_input_modes": [
+                  "script",
+                  "data_pill",
+                  "data_entry"
+                ],
+                "name": "user",
+                "label": "User",
+                "type": "reference",
+                "order": 1,
+                "required": true,
+                "query": "",
+                "table": "sys_user"
+              },
+              {
+                "supported_input_modes": [
+                  "script",
+                  "data_pill"
+                ],
+                "name": "password",
+                "label": "Password",
+                "type": "password2",
+                "order": 2,
+                "required": true
+              },
+              {
+                "supported_input_modes": [
+                  "script",
+                  "data_pill",
+                  "data_entry"
+                ],
+                "name": "force_password_change",
+                "label": "Force Password Change",
+                "type": "boolean",
+                "order": 3,
+                "required": false
+              },
+              {
+                "supported_input_modes": [
+                  "script",
+                  "data_pill",
+                  "data_entry"
+                ],
+                "name": "unlock_account",
+                "label": "Unlock Account",
+                "type": "boolean",
+                "order": 4,
+                "required": false
+              }
+            ],
+            "output_parameters": [
+              {
+                "name": "status",
+                "label": "Status",
+                "type": "choice",
+                "order": 1,
+                "required": false,
+                "choices": [
+                  {
+                    "label": "Success",
+                    "value": "Success",
+                    "order": 0
+                  },
+                  {
+                    "label": "Error",
+                    "value": "Error",
+                    "order": 1
+                  }
+                ]
+              },
+              {
+                "name": "error_message",
+                "label": "Error Message",
+                "type": "string",
+                "order": 2,
+                "required": false
+              },
+              {
+                "name": "__action_status__",
+                "label": "Action Status",
+                "type": "object",
+                "order": 2,
+                "required": false
+              },
+              {
+                "name": "__dont_treat_as_error__",
+                "label": "Don't Treat as Error",
+                "type": "boolean",
+                "order": 3,
+                "required": false
+              }
+            ]
+          },
+          "subflowSecureField": false,
+          "subflowSelectSecureField": "",
+          "subflowPromptSecureField": {
+            "mode": "simple",
+            "value": ""
+          },
+          "subflowConfirmPromptSecureField": {
+            "mode": "simple",
+            "value": ""
+          },
+          "subflowNonSecureChannelMessage": {
+            "mode": "simple",
+            "value": "This action is not supported on this channel."
+          },
+          "variableIds": [
+            "b4f4956c56ac4ae99a8ff60fca1a7076",
+            "abb20cf6b6b440329802c1bf3cb38748",
+            "7dd690e26da040438dd39ff857fcb536",
+            "72e38285d63048f9a74ea8b3bf919576"
+          ],
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        },
+        "d2a2d45a70c44adf90d3a5d6c60f6dfb": {
+          "id": "d2a2d45a70c44adf90d3a5d6c60f6dfb",
+          "stepType": "TextOutput",
+          "name": "future note",
+          "secure": false,
+          "value": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "This will be added in the future"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        },
+        "5749cfb8dda544ed985d1cbb6e7a174b": {
+          "stepType": "ReferenceChoicePrompt",
+          "name": "Choose a user",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Choose a user"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "variableId": "d69614fb8d204b40b6292aa6418041b5",
+          "id": "5749cfb8dda544ed985d1cbb6e7a174b",
+          "mode": "glide_record",
+          "script": "",
+          "metadataScript": "",
+          "cardData": {},
+          "noRecordsResponseMsg": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "No users found"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "condition": {
+            "mode": "glide_scripted_query",
+            "value": "(function execute(table) {\n   //  Code your glide record query logic here. For example:\n\n        var options = [];\n        var gr = new GlideRecordSecure(table);\n        gr.addEncodedQuery('active=true');\n        gr.orderBy('last_name');\n  //      gr.setLimit(10);\n        gr.query();\n        while(gr.next()) {\n            options.push({ 'value': gr.getUniqueValue(), 'label': gr.getValue('name') });\n        }\n        return options;\n    \n\n  /*  var options = []; // add options here...\n    return options;  */\n})(table)\n"
+          },
+          "hasCardHeader": false,
+          "cardMetadata": {
+            "mode": "card",
+            "metadataScript": "",
+            "cardTemplate": "",
+            "cardFields": {},
+            "cardDefinition": {}
+          },
+          "withNluUserInput": true,
+          "skipIfFulfilled": false
+        }
+      },
+      "edges": [
+        {
+          "id": "f34d52b4608f4b1b859f420d2fd4bd8c",
+          "edgeType": "Edge",
+          "source": "5749cfb8dda544ed985d1cbb6e7a174b",
+          "target": "88f1540e5b5d45aca2f16870cfffc777",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "1e78eac8bf4748af884f1e337404a53d",
+          "edgeType": "Branch",
+          "source": "78a06bb1772a4552920eed410116400c",
+          "target": "5749cfb8dda544ed985d1cbb6e7a174b",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.service_needed_yourself=someone else",
+            "mode": "query"
+          },
+          "label": "Someone Else"
+        },
+        {
+          "id": "a86b1e0eee5e422383bfe8633620d3d0",
+          "edgeType": "Branch",
+          "source": "80d3c6c2fd0041b68622cd56204d30c1",
+          "target": "d2a2d45a70c44adf90d3a5d6c60f6dfb",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.system=option2",
+            "mode": "query"
+          },
+          "label": "Option2"
+        },
+        {
+          "id": "cde0c08df895451485d5753a4f8d00bc",
+          "edgeType": "Edge",
+          "source": "3a988ab0450541f48548ac1d6f85895a",
+          "target": "61b1b891e59449d2a3f3103e8f9e0f96",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "0405fd9f93e44f32b21003402d8e31c6",
+          "edgeType": "Edge",
+          "source": "61b1b891e59449d2a3f3103e8f9e0f96",
+          "target": "4102bbb8bd0d486a855508fe83c8ff4e",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "a61dc4aaeb974679a1b366f1f995ad03",
+          "edgeType": "Branch",
+          "source": "4102bbb8bd0d486a855508fe83c8ff4e",
+          "target": "93458b2f5c94417d81853c93c44ee280",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.intro=no",
+            "mode": "query"
+          },
+          "label": "No"
+        },
+        {
+          "id": "5575c029cf77421c897f7279337d0164",
+          "edgeType": "Branch",
+          "source": "4102bbb8bd0d486a855508fe83c8ff4e",
+          "target": "0a40c633ff9d47b29ca1c8516f1fd1da",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.intro=yes",
+            "mode": "query"
+          },
+          "label": "Yes"
+        },
+        {
+          "id": "5d02800024094f4482ef90a729a8402c",
+          "edgeType": "Edge",
+          "source": "0a40c633ff9d47b29ca1c8516f1fd1da",
+          "target": "80d3c6c2fd0041b68622cd56204d30c1",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "ff7b90d863bc4d88b612cbf2b4a340e9",
+          "edgeType": "Branch",
+          "source": "80d3c6c2fd0041b68622cd56204d30c1",
+          "target": "87c85de7dbf44ef2a1ad827f6da832ef",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.system=serviceNow",
+            "mode": "query"
+          },
+          "label": "ServiceNow"
+        },
+        {
+          "id": "c08fa99bd0954be2b05d38d44e447323",
+          "edgeType": "Edge",
+          "source": "87c85de7dbf44ef2a1ad827f6da832ef",
+          "target": "78a06bb1772a4552920eed410116400c",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "f8fa1fbcf4144a42980f0b010b61ad74",
+          "edgeType": "Branch",
+          "source": "78a06bb1772a4552920eed410116400c",
+          "target": "a95aed4a4d354f019b3982dbcde67055",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.service_needed_yourself=Yourself",
+            "mode": "query"
+          },
+          "label": "Myself"
+        },
+        {
+          "id": "794bdd28e79d44db99cf38b2076cb79b",
+          "edgeType": "Edge",
+          "source": "a95aed4a4d354f019b3982dbcde67055",
+          "target": "93458b2f5c94417d81853c93c44ee280",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "599cf018c23b41d0be6c8ea4f9209d00",
+          "edgeType": "Edge",
+          "source": "88f1540e5b5d45aca2f16870cfffc777",
+          "target": "93458b2f5c94417d81853c93c44ee280",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "eec7f783250143ec99f5146a1fbb8593",
+          "edgeType": "Edge",
+          "source": "d2a2d45a70c44adf90d3a5d6c60f6dfb",
+          "target": "93458b2f5c94417d81853c93c44ee280",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "c5658f4b221d42ed92df63b44f8aacad",
+          "edgeType": "Branch",
+          "source": "80d3c6c2fd0041b68622cd56204d30c1",
+          "target": "d2a2d45a70c44adf90d3a5d6c60f6dfb",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.system=option1",
+            "mode": "query"
+          },
+          "label": "Option1"
+        }
+      ]
+    }
+  },
+  "variables": {
+    "current-user": {
+      "category": "vaInputs",
+      "id": "current-user",
+      "label": "User",
+      "name": "user",
+      "table": "sys_user",
+      "varType": "reference"
+    },
+    "99af1cf8799944d1a2129e9b0e85ecff": {
+      "id": "99af1cf8799944d1a2129e9b0e85ecff",
+      "name": "intro",
+      "label": "Intro",
+      "varType": "choice",
+      "choices": [
+        {
+          "label": "Yes",
+          "value": "yes"
+        },
+        {
+          "label": "No",
+          "value": "no",
+          "checked": true
+        }
+      ],
+      "category": "vaInputs"
+    },
+    "c201b96735af477b9d24bc277cd144f8": {
+      "id": "c201b96735af477b9d24bc277cd144f8",
+      "name": "system",
+      "label": "System",
+      "varType": "choice",
+      "choices": [
+        {
+          "label": "Service Now",
+          "value": "serviceNow"
+        },
+        {
+          "label": "Option 1",
+          "value": "option1",
+          "checked": true
+        },
+        {
+          "label": "Option2",
+          "value": "option2",
+          "checked": true
+        }
+      ],
+      "category": "vaInputs"
+    },
+    "2159e7743c334a9097fc5df3e374de3d": {
+      "id": "2159e7743c334a9097fc5df3e374de3d",
+      "name": "service_needed_yourself",
+      "label": "Service Needed Yourself",
+      "varType": "choice",
+      "choices": [
+        {
+          "label": "Yourself",
+          "value": "Yourself"
+        },
+        {
+          "label": "Someone else",
+          "value": "someone else",
+          "checked": true
+        }
+      ],
+      "category": "vaInputs"
+    },
+    "cd12052ea88f40fa9e81acb9c8f01c2b": {
+      "id": "cd12052ea88f40fa9e81acb9c8f01c2b",
+      "name": "status",
+      "label": "Status",
+      "defaultValue": "Status",
+      "varType": "string",
+      "category": "vaInputs",
+      "metadata": {
+        "libraryMappingType": "output"
+      },
+      "choices": [
+        {
+          "label": "Success",
+          "value": "Success",
+          "order": 0
+        },
+        {
+          "label": "Error",
+          "value": "Error",
+          "order": 1
+        }
+      ]
+    },
+    "337395a1fcb1451fb7a969432876fa17": {
+      "id": "337395a1fcb1451fb7a969432876fa17",
+      "name": "error_message",
+      "label": "Error Message",
+      "defaultValue": "Error Message",
+      "varType": "string",
+      "category": "vaInputs",
+      "metadata": {
+        "libraryMappingType": "output"
+      }
+    },
+    "7d576b1ecc06456ebc07266e552ec1f9": {
+      "id": "7d576b1ecc06456ebc07266e552ec1f9",
+      "name": "action_status",
+      "label": "Action Status",
+      "defaultValue": "Action Status",
+      "varType": "object",
+      "category": "vaInputs",
+      "metadata": {
+        "libraryMappingType": "output"
+      }
+    },
+    "20489e798cf64e5cb6c675772f617641": {
+      "id": "20489e798cf64e5cb6c675772f617641",
+      "name": "don_t_treat_as_error",
+      "label": "Don't Treat As Error",
+      "defaultValue": "Don't Treat as Error",
+      "varType": "boolean",
+      "category": "vaInputs",
+      "metadata": {
+        "libraryMappingType": "output"
+      }
+    },
+    "b4f4956c56ac4ae99a8ff60fca1a7076": {
+      "id": "b4f4956c56ac4ae99a8ff60fca1a7076",
+      "name": "status_2",
+      "label": "Status (2)",
+      "defaultValue": "Status",
+      "varType": "string",
+      "category": "vaInputs",
+      "metadata": {
+        "libraryMappingType": "output"
+      },
+      "choices": [
+        {
+          "label": "Success",
+          "value": "Success",
+          "order": 0
+        },
+        {
+          "label": "Error",
+          "value": "Error",
+          "order": 1
+        }
+      ]
+    },
+    "abb20cf6b6b440329802c1bf3cb38748": {
+      "id": "abb20cf6b6b440329802c1bf3cb38748",
+      "name": "error_message_2",
+      "label": "Error Message (2)",
+      "defaultValue": "Error Message",
+      "varType": "string",
+      "category": "vaInputs",
+      "metadata": {
+        "libraryMappingType": "output"
+      }
+    },
+    "7dd690e26da040438dd39ff857fcb536": {
+      "id": "7dd690e26da040438dd39ff857fcb536",
+      "name": "action_status_2",
+      "label": "Action Status (2)",
+      "defaultValue": "Action Status",
+      "varType": "object",
+      "category": "vaInputs",
+      "metadata": {
+        "libraryMappingType": "output"
+      }
+    },
+    "72e38285d63048f9a74ea8b3bf919576": {
+      "id": "72e38285d63048f9a74ea8b3bf919576",
+      "name": "don_t_treat_as_error_2",
+      "label": "Don't Treat As Error (2)",
+      "defaultValue": "Don't Treat as Error",
+      "varType": "boolean",
+      "category": "vaInputs",
+      "metadata": {
+        "libraryMappingType": "output"
+      }
+    },
+    "d69614fb8d204b40b6292aa6418041b5": {
+      "id": "d69614fb8d204b40b6292aa6418041b5",
+      "name": "choose_a_user",
+      "label": "Choose A User",
+      "varType": "reference",
+      "table": "sys_user",
+      "category": "vaInputs"
+    }
+  }
+}</graph>
+        <key_phrases>Password Reset,change password</key_phrases>
+        <library>false</library>
+        <live_agent>false</live_agent>
+        <name>Password Reset</name>
+        <nlu_intent/>
+        <nlu_intent_label/>
+        <nlu_model/>
+        <nlu_model_label/>
+        <nlu_provider/>
+        <palette_label/>
+        <roles>public</roles>
+        <secure_custom_input_control>false</secure_custom_input_control>
+        <source_topic_id/>
+        <sys_class_name>sys_cb_topic</sys_class_name>
+        <sys_created_by>adminjon</sys_created_by>
+        <sys_created_on>2022-03-10 14:54:50</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>16ec995fdb8e8910e6cb93afaa961945</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_name>Password Reset</sys_name>
+        <sys_package display_value="IVA Access Content Pack" source="x_saic4_iva_access">bb985597db8e8910e6cb93afaa96199c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="IVA Access Content Pack">bb985597db8e8910e6cb93afaa96199c</sys_scope>
+        <sys_update_name>sys_cb_topic_16ec995fdb8e8910e6cb93afaa961945</sys_update_name>
+        <sys_updated_by>adminjon</sys_updated_by>
+        <sys_updated_on>2022-03-16 18:01:41</sys_updated_on>
+        <triggerable_by_notification>false</triggerable_by_notification>
+        <type>STANDARD</type>
+        <variables/>
+    </sys_cb_topic>
+    <sys_variable_value action="delete_multiple" query="document_key=16ec995fdb8e8910e6cb93afaa961945"/>
+</record_update>

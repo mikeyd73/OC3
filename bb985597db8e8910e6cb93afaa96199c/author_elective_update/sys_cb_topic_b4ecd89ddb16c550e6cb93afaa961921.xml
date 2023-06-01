@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_topic">
+    <sys_cb_topic action="DELETE">
+        <applicability/>
+        <applicability_mode>query</applicability_mode>
+        <auto_resolution_enabled>false</auto_resolution_enabled>
+        <autopilot_topic>false</autopilot_topic>
+        <category/>
+        <channels/>
+        <connect_queue/>
+        <description/>
+        <expose_on_palette>false</expose_on_palette>
+        <flexible_conversation_switching>false</flexible_conversation_switching>
+        <graph>{"graph_api_version":"1.0.36","variables":{},"goals":{"primary":{"id":"primary","trigger":{"type":"primary"},"name":"primary","applicability":"","description":"","nodes":{"fdb021bf8f814123b7a8b906dc936adf":{"id":"fdb021bf8f814123b7a8b906dc936adf","stepType":"Start","name":"Start","greetingResponse":{"mode":"simple","value":""}},"872f746b737e4b53bc0c2b8b36d9554f":{"id":"872f746b737e4b53bc0c2b8b36d9554f","stepType":"TerminateGoal","name":"End","confirmationMessage":{"mode":"simple","value":""}}},"edges":[{"id":"8d4ea4e2ae39489fbe7f35433f1a6146","edgeType":"Edge","source":"fdb021bf8f814123b7a8b906dc936adf","target":"872f746b737e4b53bc0c2b8b36d9554f","sourcePort":"","targetPort":""}]}}}</graph>
+        <key_phrases>Sample</key_phrases>
+        <library>false</library>
+        <live_agent>false</live_agent>
+        <name>Sample</name>
+        <nlu_intent/>
+        <nlu_intent_label/>
+        <nlu_model/>
+        <nlu_model_label/>
+        <nlu_provider/>
+        <palette_label/>
+        <roles/>
+        <source_topic_id/>
+        <sys_class_name>sys_cb_topic</sys_class_name>
+        <sys_created_by>adminjon</sys_created_by>
+        <sys_created_on>2022-03-16 15:22:57</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>b4ecd89ddb16c550e6cb93afaa961921</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Sample</sys_name>
+        <sys_package display_value="IVA Access Content Pack" source="x_saic4_iva_access">bb985597db8e8910e6cb93afaa96199c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="IVA Access Content Pack">bb985597db8e8910e6cb93afaa96199c</sys_scope>
+        <sys_update_name>sys_cb_topic_b4ecd89ddb16c550e6cb93afaa961921</sys_update_name>
+        <sys_updated_by>adminjon</sys_updated_by>
+        <sys_updated_on>2022-03-16 15:22:57</sys_updated_on>
+        <triggerable_by_notification>false</triggerable_by_notification>
+        <type>STANDARD</type>
+        <variables/>
+    </sys_cb_topic>
+    <sys_variable_value action="DELETE" query="document_key=b4ecd89ddb16c550e6cb93afaa961921"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="IVA Access Content Pack">bb985597db8e8910e6cb93afaa96199c</application>
+        <file_path/>
+        <instance_id>85f207696f9e420056007b2f5d3ee415</instance_id>
+        <instance_name>saicdemo1</instance_name>
+        <name>sys_cb_topic_b4ecd89ddb16c550e6cb93afaa961921</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_topic"><sys_cb_topic action="INSERT_OR_UPDATE"><applicability/><applicability_mode>query</applicability_mode><auto_resolution_enabled>false</auto_resolution_enabled><autopilot_topic>false</autopilot_topic><category/><channels/><connect_queue/><description/><expose_on_palette>false</expose_on_palette><flexible_conversation_switching>false</flexible_conversation_switching><graph>{"graph_api_version":"1.0.36","variables":{},"goals":{"primary":{"id":"primary","trigger":{"type":"primary"},"name":"primary","applicability":"","description":"","nodes":{"fdb021bf8f814123b7a8b906dc936adf":{"id":"fdb021bf8f814123b7a8b906dc936adf","stepType":"Start","name":"Start","greetingResponse":{"mode":"simple","value":""}},"872f746b737e4b53bc0c2b8b36d9554f":{"id":"872f746b737e4b53bc0c2b8b36d9554f","stepType":"TerminateGoal","name":"End","confirmationMessage":{"mode":"simple","value":""}}},"edges":[{"id":"8d4ea4e2ae39489fbe7f35433f1a6146","edgeType":"Edge","source":"fdb021bf8f814123b7a8b906dc936adf","target":"872f746b737e4b53bc0c2b8b36d9554f","sourcePort":"","targetPort":""}]}}}</graph><key_phrases>Sample</key_phrases><library>false</library><live_agent>false</live_agent><name>Sample</name><nlu_intent/><nlu_intent_label/><nlu_model/><nlu_model_label/><nlu_provider/><palette_label/><roles/><source_topic_id/><sys_class_name>sys_cb_topic</sys_class_name><sys_created_by>adminjon</sys_created_by><sys_created_on>2022-03-16 15:22:57</sys_created_on><sys_domain>global</sys_domain><sys_id>b4ecd89ddb16c550e6cb93afaa961921</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Sample</sys_name><sys_package display_value="IVA Access Content Pack" source="x_saic4_iva_access">bb985597db8e8910e6cb93afaa96199c</sys_package><sys_policy/><sys_scope display_value="IVA Access Content Pack">bb985597db8e8910e6cb93afaa96199c</sys_scope><sys_update_name>sys_cb_topic_b4ecd89ddb16c550e6cb93afaa961921</sys_update_name><sys_updated_by>adminjon</sys_updated_by><sys_updated_on>2022-03-16 15:22:57</sys_updated_on><triggerable_by_notification>false</triggerable_by_notification><type>STANDARD</type><variables/></sys_cb_topic><sys_variable_value action="delete_multiple" query="document_key=b4ecd89ddb16c550e6cb93afaa961921"/></record_update>]]></payload>
+        <payload_hash>1734430263</payload_hash>
+        <record_name>Sample</record_name>
+        <reverted_from/>
+        <source>e3c23e631b0e0d1055d178cf034bcb97</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>adminjon</sys_created_by>
+        <sys_created_on>2022-03-16 15:22:58</sys_created_on>
+        <sys_id>f4ec1c9ddb16c550e6cb93afaa961983</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17f935334f00000001</sys_recorded_at>
+        <sys_updated_by>adminjon</sys_updated_by>
+        <sys_updated_on>2022-03-16 15:22:58</sys_updated_on>
+        <type>Topic</type>
+        <update_guid>fcec1c9da316c5505ba7b5d798890982</update_guid>
+        <update_guid_history>fcec1c9da316c5505ba7b5d798890982:1734430263</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>adminjon</sys_created_by>
+        <sys_created_on>2022-03-16 18:05:46</sys_created_on>
+        <sys_db_object display_value="" name="sys_cb_topic">sys_cb_topic</sys_db_object>
+        <sys_id>049124c2b2ea45f4a3fc21879e25d610</sys_id>
+        <sys_metadata>b4ecd89ddb16c550e6cb93afaa961921</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Sample</sys_name>
+        <sys_package display_value="IVA Access Content Pack" source="x_saic4_iva_access">bb985597db8e8910e6cb93afaa96199c</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="IVA Access Content Pack">bb985597db8e8910e6cb93afaa96199c</sys_scope>
+        <sys_scope_delete display_value="">5e635d67f6ad4b27a37156c1b428fc11</sys_scope_delete>
+        <sys_update_name>sys_cb_topic_b4ecd89ddb16c550e6cb93afaa961921</sys_update_name>
+        <sys_update_version display_value="sys_cb_topic_b4ecd89ddb16c550e6cb93afaa961921">f4ec1c9ddb16c550e6cb93afaa961983</sys_update_version>
+        <sys_updated_by>adminjon</sys_updated_by>
+        <sys_updated_on>2022-03-16 18:05:46</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

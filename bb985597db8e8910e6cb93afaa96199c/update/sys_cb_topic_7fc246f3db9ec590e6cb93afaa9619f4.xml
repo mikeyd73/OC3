@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_topic">
+    <sys_cb_topic action="INSERT_OR_UPDATE">
+        <applicability/>
+        <applicability_mode>query</applicability_mode>
+        <auto_resolution_enabled>false</auto_resolution_enabled>
+        <autopilot_topic>false</autopilot_topic>
+        <category/>
+        <channels/>
+        <connect_queue/>
+        <description>Lets an admin grant access to another user</description>
+        <expose_on_palette>false</expose_on_palette>
+        <flexible_conversation_switching>false</flexible_conversation_switching>
+        <graph>{
+  "graph_api_version": "1.0.36",
+  "goals": {
+    "primary": {
+      "id": "primary",
+      "trigger": {
+        "type": "primary"
+      },
+      "name": "primary",
+      "applicability": "",
+      "description": "",
+      "nodes": {
+        "11b3f918e83947f09151dcfc59d2632e": {
+          "id": "11b3f918e83947f09151dcfc59d2632e",
+          "stepType": "Start",
+          "name": "Start",
+          "greetingResponse": {
+            "mode": "simple",
+            "value": ""
+          }
+        },
+        "2a08f3c182014a8f83c7ad0ccbad21c4": {
+          "id": "2a08f3c182014a8f83c7ad0ccbad21c4",
+          "stepType": "TerminateGoal",
+          "name": "End",
+          "confirmationMessage": {
+            "mode": "simple",
+            "value": ""
+          }
+        },
+        "8897cb4cc3cb4edf8291a0be6e10072f": {
+          "stepType": "ChoicePrompt",
+          "name": "Title",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Do you want to grant access to a user"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "variableId": "29a88d919e86473395b2d5139b839525",
+          "id": "8897cb4cc3cb4edf8291a0be6e10072f",
+          "hasCardHeader": false,
+          "cardMetadata": {
+            "mode": "card",
+            "metadataScript": "",
+            "cardTemplate": "",
+            "cardFields": {},
+            "cardDefinition": {}
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false
+        },
+        "6782eefa207e407da50abb82f5d533a2": {
+          "id": "6782eefa207e407da50abb82f5d533a2",
+          "stepType": "Decision",
+          "name": "Decision"
+        },
+        "9a7e3b98155a4c359eb8d7e0acf4bb05": {
+          "stepType": "ReferenceChoicePrompt",
+          "name": "UserForAccess",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "What user would like access to Service Now"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "variableId": "190c69b27bc94273b55b8845b449e411",
+          "id": "9a7e3b98155a4c359eb8d7e0acf4bb05",
+          "mode": "glide_record",
+          "script": "",
+          "metadataScript": "",
+          "cardData": {},
+          "noRecordsResponseMsg": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Error - There are no users"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "condition": {
+            "mode": "glide_query",
+            "value": "active=true"
+          },
+          "hasCardHeader": false,
+          "cardMetadata": {
+            "mode": "card",
+            "metadataScript": "",
+            "cardTemplate": "",
+            "cardFields": {},
+            "cardDefinition": {}
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false
+        },
+        "9eb8d7fafcad4176b95ef7a4fb37db0f": {
+          "id": "9eb8d7fafcad4176b95ef7a4fb37db0f",
+          "stepType": "TextOutput",
+          "name": "Grant Access",
+          "secure": false,
+          "value": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "This is the step where we would grant access."
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        }
+      },
+      "edges": [
+        {
+          "id": "9d4eabd5baa24297aef458f4e2bc298c",
+          "edgeType": "Edge",
+          "source": "9a7e3b98155a4c359eb8d7e0acf4bb05",
+          "target": "9eb8d7fafcad4176b95ef7a4fb37db0f",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "7098f5a0d03e482e89063eabb4bf203a",
+          "edgeType": "Edge",
+          "source": "11b3f918e83947f09151dcfc59d2632e",
+          "target": "8897cb4cc3cb4edf8291a0be6e10072f",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "8d37ca961e4d415b917082a8d6585a84",
+          "edgeType": "Edge",
+          "source": "8897cb4cc3cb4edf8291a0be6e10072f",
+          "target": "6782eefa207e407da50abb82f5d533a2",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "2ce10f9812f247a198a99996f0eb746d",
+          "edgeType": "Branch",
+          "source": "6782eefa207e407da50abb82f5d533a2",
+          "target": "2a08f3c182014a8f83c7ad0ccbad21c4",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.title=No",
+            "mode": "query"
+          },
+          "label": "No"
+        },
+        {
+          "id": "7c7f08ce4f4646ffae4d5cf97249cc0f",
+          "edgeType": "Branch",
+          "source": "6782eefa207e407da50abb82f5d533a2",
+          "target": "9a7e3b98155a4c359eb8d7e0acf4bb05",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.title=Yes",
+            "mode": "query"
+          },
+          "label": "Yes"
+        },
+        {
+          "id": "d594a1a68770429b8497188772f7c8f8",
+          "edgeType": "Edge",
+          "source": "9eb8d7fafcad4176b95ef7a4fb37db0f",
+          "target": "2a08f3c182014a8f83c7ad0ccbad21c4",
+          "sourcePort": "",
+          "targetPort": ""
+        }
+      ]
+    }
+  },
+  "variables": {
+    "current-user": {
+      "category": "vaInputs",
+      "id": "current-user",
+      "label": "User",
+      "name": "user",
+      "table": "sys_user",
+      "varType": "reference"
+    },
+    "29a88d919e86473395b2d5139b839525": {
+      "id": "29a88d919e86473395b2d5139b839525",
+      "name": "title",
+      "label": "Title",
+      "varType": "choice",
+      "choices": [
+        {
+          "label": "Yes",
+          "value": "Yes"
+        },
+        {
+          "label": "No",
+          "value": "No",
+          "checked": true
+        }
+      ],
+      "category": "vaInputs"
+    },
+    "190c69b27bc94273b55b8845b449e411": {
+      "id": "190c69b27bc94273b55b8845b449e411",
+      "name": "userforaccess",
+      "label": "UserForAccess",
+      "varType": "reference",
+      "table": "sys_user",
+      "category": "vaInputs"
+    }
+  }
+}</graph>
+        <key_phrases>Grant Access (Admin)</key_phrases>
+        <library>false</library>
+        <live_agent>false</live_agent>
+        <name>Grant Access (Admin)</name>
+        <nlu_intent/>
+        <nlu_intent_label/>
+        <nlu_model/>
+        <nlu_model_label/>
+        <nlu_provider/>
+        <palette_label/>
+        <roles>admin</roles>
+        <secure_custom_input_control>false</secure_custom_input_control>
+        <source_topic_id/>
+        <sys_class_name>sys_cb_topic</sys_class_name>
+        <sys_created_by>adminjon</sys_created_by>
+        <sys_created_on>2022-03-24 17:13:04</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>7fc246f3db9ec590e6cb93afaa9619f4</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Grant Access (Admin)</sys_name>
+        <sys_package display_value="IVA Access Content Pack" source="x_saic4_iva_access">bb985597db8e8910e6cb93afaa96199c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="IVA Access Content Pack">bb985597db8e8910e6cb93afaa96199c</sys_scope>
+        <sys_update_name>sys_cb_topic_7fc246f3db9ec590e6cb93afaa9619f4</sys_update_name>
+        <sys_updated_by>adminjon</sys_updated_by>
+        <sys_updated_on>2022-03-31 17:02:05</sys_updated_on>
+        <triggerable_by_notification>false</triggerable_by_notification>
+        <type>STANDARD</type>
+        <variables/>
+    </sys_cb_topic>
+    <sys_variable_value action="delete_multiple" query="document_key=7fc246f3db9ec590e6cb93afaa9619f4"/>
+</record_update>

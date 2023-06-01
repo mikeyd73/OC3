@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_topic_language">
+    <sys_cb_topic_language action="INSERT_OR_UPDATE">
+        <cb_topic_id display_value="Password Reset">16ec995fdb8e8910e6cb93afaa961945</cb_topic_id>
+        <language_code>en</language_code>
+        <nlu_entities>[]</nlu_entities>
+        <nlu_intent>ChangePassword</nlu_intent>
+        <nlu_intent_label>ChangePassword</nlu_intent_label>
+        <nlu_model>ml_sn_sn_pwdreset_va_global_f57d668f538220107cb0ddeeff7b12b9</nlu_model>
+        <nlu_model_label>[Read Only] Password Reset NLU Model</nlu_model_label>
+        <nlu_provider>64c023c17300330021a044764df6a70e</nlu_provider>
+        <sys_class_name>sys_cb_topic_language</sys_class_name>
+        <sys_created_by>adminjon</sys_created_by>
+        <sys_created_on>2022-03-10 14:54:51</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>aaec19dfdb8e8910e6cb93afaa961956</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="IVA Access Content Pack" source="x_saic4_iva_access">bb985597db8e8910e6cb93afaa96199c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="IVA Access Content Pack">bb985597db8e8910e6cb93afaa96199c</sys_scope>
+        <sys_update_name>sys_cb_topic_language_aaec19dfdb8e8910e6cb93afaa961956</sys_update_name>
+        <sys_updated_by>adminjon</sys_updated_by>
+        <sys_updated_on>2022-03-16 18:01:42</sys_updated_on>
+    </sys_cb_topic_language>
+</record_update>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_message">
+    <sys_ui_message action="INSERT_OR_UPDATE">
+        <application>Virtual Agent</application>
+        <code/>
+        <commented_message/>
+        <key>no users found</key>
+        <language>en</language>
+        <message>No users found</message>
+        <sys_class_name>sys_ui_message</sys_class_name>
+        <sys_created_by>adminjon</sys_created_by>
+        <sys_created_on>2022-03-15 14:24:41</sys_created_on>
+        <sys_id>e5f5cf781b56455055d178cf034bcbe1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>no users found</sys_name>
+        <sys_package display_value="IVA Access Content Pack" source="x_saic4_iva_access">bb985597db8e8910e6cb93afaa96199c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="IVA Access Content Pack">bb985597db8e8910e6cb93afaa96199c</sys_scope>
+        <sys_update_name>sys_ui_message_e5f5cf781b56455055d178cf034bcbe1</sys_update_name>
+        <sys_updated_by>adminjon</sys_updated_by>
+        <sys_updated_on>2022-03-15 14:24:41</sys_updated_on>
+    </sys_ui_message>
+</record_update>

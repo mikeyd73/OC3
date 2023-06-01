@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cs_topic_language">
+    <sys_cs_topic_language action="DELETE">
+        <cs_topic_id display_value="Request Access">4f944642dbea85d0e6cb93afaa96199a</cs_topic_id>
+        <language_code>en</language_code>
+        <nlu_entities>[]</nlu_entities>
+        <nlu_intent>Grant Access For Someone Else</nlu_intent>
+        <nlu_intent_label>Grant Access For Someone Else</nlu_intent_label>
+        <nlu_model>ml_x_saic4_x_saic4_iva_access_global_7c30ca4adbaa85d0e6cb93afaa9619b0</nlu_model>
+        <nlu_model_label>Grant Access</nlu_model_label>
+        <nlu_provider>64c023c17300330021a044764df6a70e</nlu_provider>
+        <sys_class_name>sys_cs_topic_language</sys_class_name>
+        <sys_created_by>adminjon</sys_created_by>
+        <sys_created_on>2022-03-31 17:07:16</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>cf944642dbea85d0e6cb93afaa96199f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="IVA Access Content Pack" source="x_saic4_iva_access">bb985597db8e8910e6cb93afaa96199c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="IVA Access Content Pack">bb985597db8e8910e6cb93afaa96199c</sys_scope>
+        <sys_update_name>sys_cs_topic_language_cf944642dbea85d0e6cb93afaa96199f</sys_update_name>
+        <sys_updated_by>adminjon</sys_updated_by>
+        <sys_updated_on>2022-03-31 17:07:16</sys_updated_on>
+    </sys_cs_topic_language>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="IVA Access Content Pack">bb985597db8e8910e6cb93afaa96199c</application>
+        <file_path/>
+        <instance_id>85f207696f9e420056007b2f5d3ee415</instance_id>
+        <instance_name>saicdemo1</instance_name>
+        <name>sys_cs_topic_language_cf944642dbea85d0e6cb93afaa96199f</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cs_topic_language"><sys_cs_topic_language action="INSERT_OR_UPDATE"><cs_topic_id display_value="Request Access">4f944642dbea85d0e6cb93afaa96199a</cs_topic_id><language_code>en</language_code><nlu_entities>[]</nlu_entities><nlu_intent>Grant Access For Someone Else</nlu_intent><nlu_intent_label>Grant Access For Someone Else</nlu_intent_label><nlu_model>ml_x_saic4_x_saic4_iva_access_global_7c30ca4adbaa85d0e6cb93afaa9619b0</nlu_model><nlu_model_label>Grant Access</nlu_model_label><nlu_provider>64c023c17300330021a044764df6a70e</nlu_provider><sys_class_name>sys_cs_topic_language</sys_class_name><sys_created_by>adminjon</sys_created_by><sys_created_on>2022-03-31 17:07:16</sys_created_on><sys_domain>global</sys_domain><sys_id>cf944642dbea85d0e6cb93afaa96199f</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="IVA Access Content Pack" source="x_saic4_iva_access">bb985597db8e8910e6cb93afaa96199c</sys_package><sys_policy/><sys_scope display_value="IVA Access Content Pack">bb985597db8e8910e6cb93afaa96199c</sys_scope><sys_update_name>sys_cs_topic_language_cf944642dbea85d0e6cb93afaa96199f</sys_update_name><sys_updated_by>adminjon</sys_updated_by><sys_updated_on>2022-03-31 17:07:16</sys_updated_on></sys_cs_topic_language></record_update>]]></payload>
+        <payload_hash>-1034281950</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>e3c23e631b0e0d1055d178cf034bcb97</source>
+        <source_table>sys_update_set</source_table>
+        <state>current</state>
+        <sys_created_by>adminjon</sys_created_by>
+        <sys_created_on>2022-03-31 17:07:16</sys_created_on>
+        <sys_id>83948a42dbea85d0e6cb93afaa96190d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17fe0f218d50000001</sys_recorded_at>
+        <sys_updated_by>adminjon</sys_updated_by>
+        <sys_updated_on>2022-03-31 17:07:16</sys_updated_on>
+        <type>CS Topic Language</type>
+        <update_guid>8b948a4272ea85d0ac01482c64dc2f0c</update_guid>
+        <update_guid_history>8b948a4272ea85d0ac01482c64dc2f0c:-1034281950</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2022-04-01 05:11:34</sys_created_on>
+        <sys_db_object display_value="" name="sys_cs_topic_language">sys_cs_topic_language</sys_db_object>
+        <sys_id>125aaa49f97e433881d48dfcecebe9a1</sys_id>
+        <sys_metadata>cf944642dbea85d0e6cb93afaa96199f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="IVA Access Content Pack" source="x_saic4_iva_access">bb985597db8e8910e6cb93afaa96199c</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="IVA Access Content Pack">bb985597db8e8910e6cb93afaa96199c</sys_scope>
+        <sys_scope_delete display_value="">5e635d67f6ad4b27a37156c1b428fc11</sys_scope_delete>
+        <sys_update_name>sys_cs_topic_language_cf944642dbea85d0e6cb93afaa96199f</sys_update_name>
+        <sys_update_version display_value="sys_cs_topic_language_cf944642dbea85d0e6cb93afaa96199f">83948a42dbea85d0e6cb93afaa96190d</sys_update_version>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2022-04-01 05:11:34</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

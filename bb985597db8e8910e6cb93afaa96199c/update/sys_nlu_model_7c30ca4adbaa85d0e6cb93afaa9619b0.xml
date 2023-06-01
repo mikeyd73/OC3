@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_nlu_model">
+    <sys_nlu_model action="INSERT_OR_UPDATE">
+        <category>virtual_agent</category>
+        <confidence_threshold>0.6</confidence_threshold>
+        <description>Model used to grant access</description>
+        <display_name>Grant Access</display_name>
+        <ignore_punctuation/>
+        <language>en</language>
+        <last_translated_on/>
+        <model_domain/>
+        <name>ml_x_saic4_x_saic4_iva_access_global_7c30ca4adbaa85d0e6cb93afaa9619b0</name>
+        <oob>false</oob>
+        <primary_model/>
+        <state>Published</state>
+        <sys_class_name>sys_nlu_model</sys_class_name>
+        <sys_created_by>adminjon</sys_created_by>
+        <sys_created_on>2022-03-31 16:48:00</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>7c30ca4adbaa85d0e6cb93afaa9619b0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Grant Access</sys_name>
+        <sys_package display_value="IVA Access Content Pack" source="x_saic4_iva_access">bb985597db8e8910e6cb93afaa96199c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="IVA Access Content Pack">bb985597db8e8910e6cb93afaa96199c</sys_scope>
+        <sys_update_name>sys_nlu_model_7c30ca4adbaa85d0e6cb93afaa9619b0</sys_update_name>
+        <sys_updated_by>adminjon</sys_updated_by>
+        <sys_updated_on>2022-03-31 16:48:00</sys_updated_on>
+        <vocabulary_needs_review>false</vocabulary_needs_review>
+    </sys_nlu_model>
+</record_update>

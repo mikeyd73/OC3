@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cs_topic_language">
+    <sys_cs_topic_language action="INSERT_OR_UPDATE">
+        <cs_topic_id display_value="Unlock account">10e3cff51b920d5055d178cf034bcb19</cs_topic_id>
+        <language_code>en</language_code>
+        <nlu_entities>[]</nlu_entities>
+        <nlu_intent>UnlockAccount</nlu_intent>
+        <nlu_intent_label>UnlockAccount</nlu_intent_label>
+        <nlu_model>ml_sn_sn_pwdreset_va_global_f57d668f538220107cb0ddeeff7b12b9</nlu_model>
+        <nlu_model_label>[Read Only] Password Reset NLU Model</nlu_model_label>
+        <nlu_provider>64c023c17300330021a044764df6a70e</nlu_provider>
+        <sys_class_name>sys_cs_topic_language</sys_class_name>
+        <sys_created_by>adminjon</sys_created_by>
+        <sys_created_on>2022-03-18 16:49:32</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>64e3cff51b920d5055d178cf034bcb46</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="IVA Access Content Pack" source="x_saic4_iva_access">bb985597db8e8910e6cb93afaa96199c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="IVA Access Content Pack">bb985597db8e8910e6cb93afaa96199c</sys_scope>
+        <sys_update_name>sys_cs_topic_language_64e3cff51b920d5055d178cf034bcb46</sys_update_name>
+        <sys_updated_by>adminjon</sys_updated_by>
+        <sys_updated_on>2022-03-18 16:49:32</sys_updated_on>
+    </sys_cs_topic_language>
+</record_update>

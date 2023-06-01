@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_topic">
+    <sys_cb_topic action="INSERT_OR_UPDATE">
+        <applicability/>
+        <applicability_mode>query</applicability_mode>
+        <auto_resolution_enabled>false</auto_resolution_enabled>
+        <autopilot_topic>false</autopilot_topic>
+        <category/>
+        <channels/>
+        <connect_queue/>
+        <description>This topic will be used so that a user can request access to a system.  I ticket will be created for an admin to grant access at a later date</description>
+        <expose_on_palette>false</expose_on_palette>
+        <flexible_conversation_switching>false</flexible_conversation_switching>
+        <graph>{
+  "graph_api_version": "1.0.36",
+  "goals": {
+    "primary": {
+      "id": "primary",
+      "trigger": {
+        "type": "primary"
+      },
+      "name": "primary",
+      "applicability": "",
+      "description": "",
+      "nodes": {
+        "a5bfbc059b954f618a48d0333ae4441a": {
+          "id": "a5bfbc059b954f618a48d0333ae4441a",
+          "stepType": "Start",
+          "name": "Start",
+          "greetingResponse": {
+            "mode": "simple",
+            "value": ""
+          }
+        },
+        "d87b20ad9ba9470f8b99721063f955e8": {
+          "id": "d87b20ad9ba9470f8b99721063f955e8",
+          "stepType": "TerminateGoal",
+          "name": "End",
+          "confirmationMessage": {
+            "mode": "simple",
+            "value": ""
+          }
+        },
+        "54ac896075ab4c9e914507fcf1e67fa5": {
+          "stepType": "ChoicePrompt",
+          "name": "Title",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Do you want to request access to a system?"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "variableId": "e5a70d16bfa44df79885fbceda288c6a",
+          "id": "54ac896075ab4c9e914507fcf1e67fa5",
+          "hasCardHeader": false,
+          "cardMetadata": {
+            "mode": "card",
+            "metadataScript": "",
+            "cardTemplate": "",
+            "cardFields": {},
+            "cardDefinition": {}
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false
+        },
+        "348f22e0c2a34fc4a5e7301d2f30ae6b": {
+          "id": "348f22e0c2a34fc4a5e7301d2f30ae6b",
+          "stepType": "Decision",
+          "name": "Decision"
+        },
+        "b27f04ff96a0482e85fd06f4e224d90e": {
+          "stepType": "ChoicePrompt",
+          "name": "System",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "What system would you like to request access to?"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "variableId": "3eaaf652875c43b7bb6eb2ad61003129",
+          "id": "b27f04ff96a0482e85fd06f4e224d90e",
+          "hasCardHeader": false,
+          "cardMetadata": {
+            "mode": "card",
+            "metadataScript": "",
+            "cardTemplate": "",
+            "cardFields": {},
+            "cardDefinition": {}
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false
+        },
+        "3e2e171e367645dfb237ff8d4af7c8df": {
+          "id": "3e2e171e367645dfb237ff8d4af7c8df",
+          "stepType": "Decision",
+          "name": "Decision"
+        },
+        "616994c42f524abf9567a6981ff5cbc0": {
+          "id": "616994c42f524abf9567a6981ff5cbc0",
+          "stepType": "Prompt",
+          "name": "Other Name",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "What specific system would you like to request access to?"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false,
+          "variableId": "b2f943719c704e07a6bef8617d2369c7",
+          "inputType": {
+            "format": "Text",
+            "script": ""
+          }
+        },
+        "2a68503f5fcc4c74960a1deed3791669": {
+          "id": "2a68503f5fcc4c74960a1deed3791669",
+          "stepType": "CrudAction",
+          "name": "Create Ticket",
+          "template": "description={{vaInputs.user.name}} wants to request access in service now.^short_description={{vaInputs.user.name}} wants to request access in service now.",
+          "mode": "create",
+          "record": "",
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "variableId": "886122b7b3fd4e059ab0ece98e845dd8"
+        },
+        "f4c57b8a0a974fef8060eb7078474c0f": {
+          "id": "f4c57b8a0a974fef8060eb7078474c0f",
+          "stepType": "CrudAction",
+          "name": "Create Ticket Other",
+          "template": "description={{vaInputs.user.name}} would like to request access in {{vaInputs.other_name}}^short_description={{vaInputs.user.name}} would like to request access in {{vaInputs.other_name}}",
+          "mode": "create",
+          "record": "",
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "variableId": "91ddfba0b1a549b7b754c16241d7d920"
+        },
+        "b9b29ca92d9d439f92906c861295691c": {
+          "id": "b9b29ca92d9d439f92906c861295691c",
+          "stepType": "TextOutput",
+          "name": "Confirmation",
+          "secure": false,
+          "value": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Ticket has been made."
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        }
+      },
+      "edges": [
+        {
+          "id": "73dfa199930349ab8ad2360a5daf8263",
+          "edgeType": "Edge",
+          "source": "a5bfbc059b954f618a48d0333ae4441a",
+          "target": "54ac896075ab4c9e914507fcf1e67fa5",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "de38635c3305460d8361cdc205eef5bd",
+          "edgeType": "Edge",
+          "source": "54ac896075ab4c9e914507fcf1e67fa5",
+          "target": "348f22e0c2a34fc4a5e7301d2f30ae6b",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "34754b1c9fdb45f698a1e1ccce864183",
+          "edgeType": "Branch",
+          "source": "348f22e0c2a34fc4a5e7301d2f30ae6b",
+          "target": "d87b20ad9ba9470f8b99721063f955e8",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.title=No",
+            "mode": "query"
+          },
+          "label": "No"
+        },
+        {
+          "id": "22d18b83ae0844e09b4aee5e586f28a1",
+          "edgeType": "Branch",
+          "source": "348f22e0c2a34fc4a5e7301d2f30ae6b",
+          "target": "b27f04ff96a0482e85fd06f4e224d90e",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.title=Yes",
+            "mode": "query"
+          },
+          "label": "Yes"
+        },
+        {
+          "id": "b9c63cb46eda47e7a563f6b6ecb8d8ac",
+          "edgeType": "Edge",
+          "source": "b27f04ff96a0482e85fd06f4e224d90e",
+          "target": "3e2e171e367645dfb237ff8d4af7c8df",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "b5f3ba01252441bbb564bce930ed7986",
+          "edgeType": "Branch",
+          "source": "3e2e171e367645dfb237ff8d4af7c8df",
+          "target": "616994c42f524abf9567a6981ff5cbc0",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.system=Other",
+            "mode": "query"
+          },
+          "label": "Other"
+        },
+        {
+          "id": "ab60dade173d4bd885d35dd3576553fb",
+          "edgeType": "Branch",
+          "source": "3e2e171e367645dfb237ff8d4af7c8df",
+          "target": "2a68503f5fcc4c74960a1deed3791669",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.system=ServiceNow",
+            "mode": "query"
+          },
+          "label": "ServiceNow"
+        },
+        {
+          "id": "833ec06a469340deb847b6cff96aca04",
+          "edgeType": "Edge",
+          "source": "616994c42f524abf9567a6981ff5cbc0",
+          "target": "f4c57b8a0a974fef8060eb7078474c0f",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "ddb1c53eaa194e0eb2868db8aa7628c1",
+          "edgeType": "Edge",
+          "source": "f4c57b8a0a974fef8060eb7078474c0f",
+          "target": "b9b29ca92d9d439f92906c861295691c",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "9723f706f6d74b279342b04201b9487c",
+          "edgeType": "Edge",
+          "source": "2a68503f5fcc4c74960a1deed3791669",
+          "target": "b9b29ca92d9d439f92906c861295691c",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "cf45998db8694ae2bd71130b29345d7f",
+          "edgeType": "Edge",
+          "source": "b9b29ca92d9d439f92906c861295691c",
+          "target": "d87b20ad9ba9470f8b99721063f955e8",
+          "sourcePort": "",
+          "targetPort": ""
+        }
+      ]
+    }
+  },
+  "variables": {
+    "current-user": {
+      "category": "vaInputs",
+      "id": "current-user",
+      "label": "User",
+      "name": "user",
+      "table": "sys_user",
+      "varType": "reference"
+    },
+    "e5a70d16bfa44df79885fbceda288c6a": {
+      "id": "e5a70d16bfa44df79885fbceda288c6a",
+      "name": "title",
+      "label": "Title",
+      "varType": "choice",
+      "choices": [
+        {
+          "label": "Yes",
+          "value": "Yes"
+        },
+        {
+          "label": "No",
+          "value": "No",
+          "checked": true
+        }
+      ],
+      "category": "vaInputs"
+    },
+    "3eaaf652875c43b7bb6eb2ad61003129": {
+      "id": "3eaaf652875c43b7bb6eb2ad61003129",
+      "name": "system",
+      "label": "System",
+      "varType": "choice",
+      "choices": [
+        {
+          "label": "ServiceNow",
+          "value": "ServiceNow"
+        },
+        {
+          "label": "Other",
+          "value": "Other",
+          "checked": true
+        }
+      ],
+      "category": "vaInputs"
+    },
+    "b2f943719c704e07a6bef8617d2369c7": {
+      "id": "b2f943719c704e07a6bef8617d2369c7",
+      "name": "other_name",
+      "label": "Other Name",
+      "varType": "string",
+      "secure": false,
+      "category": "vaInputs",
+      "encryptionHashFunction": "SHA-256",
+      "encryptionSalt": {
+        "value": "MTY0ODU2NjAyMjc0NiBWQSBEZXNpZ25lciBpcyBhd2Vzb21l",
+        "mode": "simple"
+      }
+    },
+    "886122b7b3fd4e059ab0ece98e845dd8": {
+      "id": "886122b7b3fd4e059ab0ece98e845dd8",
+      "name": "create_ticket",
+      "label": "Create Ticket",
+      "varType": "reference",
+      "table": "incident",
+      "inactive": false,
+      "category": "vaInputs"
+    },
+    "91ddfba0b1a549b7b754c16241d7d920": {
+      "id": "91ddfba0b1a549b7b754c16241d7d920",
+      "name": "create_ticket_other",
+      "label": "Create Ticket Other",
+      "varType": "reference",
+      "table": "incident",
+      "inactive": false,
+      "category": "vaInputs"
+    }
+  }
+}</graph>
+        <key_phrases>Request Access</key_phrases>
+        <library>false</library>
+        <live_agent>false</live_agent>
+        <name>Request Access</name>
+        <nlu_intent/>
+        <nlu_intent_label/>
+        <nlu_model/>
+        <nlu_model_label/>
+        <nlu_provider/>
+        <palette_label/>
+        <roles/>
+        <secure_custom_input_control>false</secure_custom_input_control>
+        <source_topic_id/>
+        <sys_class_name>sys_cb_topic</sys_class_name>
+        <sys_created_by>adminjon</sys_created_by>
+        <sys_created_on>2022-03-29 14:53:46</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>80e21b9ddbe281d0e6cb93afaa9619bd</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name>Request Access</sys_name>
+        <sys_package display_value="IVA Access Content Pack" source="x_saic4_iva_access">bb985597db8e8910e6cb93afaa96199c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="IVA Access Content Pack">bb985597db8e8910e6cb93afaa96199c</sys_scope>
+        <sys_update_name>sys_cb_topic_80e21b9ddbe281d0e6cb93afaa9619bd</sys_update_name>
+        <sys_updated_by>adminjon</sys_updated_by>
+        <sys_updated_on>2022-03-31 20:24:43</sys_updated_on>
+        <triggerable_by_notification>false</triggerable_by_notification>
+        <type>STANDARD</type>
+        <variables/>
+    </sys_cb_topic>
+    <sys_variable_value action="delete_multiple" query="document_key=80e21b9ddbe281d0e6cb93afaa9619bd"/>
+</record_update>

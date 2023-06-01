@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cs_topic_language">
+    <sys_cs_topic_language action="DELETE">
+        <cs_topic_id display_value="Password Reset">f8d6a9dfdbce8910e6cb93afaa961948</cs_topic_id>
+        <language_code>en</language_code>
+        <nlu_entities>[{"variable_name":"intro","nlu_entity":"","nlu_entity_label":""},{"variable_name":"system","nlu_entity":"","nlu_entity_label":""},{"variable_name":"tbd","nlu_entity":"","nlu_entity_label":""},{"variable_name":"service_needed_yourself","nlu_entity":"","nlu_entity_label":""},{"variable_name":"not","nlu_entity":"","nlu_entity_label":""}]</nlu_entities>
+        <nlu_intent>ChangePassword</nlu_intent>
+        <nlu_intent_label>ChangePassword</nlu_intent_label>
+        <nlu_model>ml_sn_sn_pwdreset_va_global_f57d668f538220107cb0ddeeff7b12b9</nlu_model>
+        <nlu_model_label>[Read Only] Password Reset NLU Model</nlu_model_label>
+        <nlu_provider>64c023c17300330021a044764df6a70e</nlu_provider>
+        <sys_class_name>sys_cs_topic_language</sys_class_name>
+        <sys_created_by>adminjon</sys_created_by>
+        <sys_created_on>2022-03-10 15:38:09</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>7cd6a9dfdbce8910e6cb93afaa96194d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="IVA Access Content Pack" source="x_saic4_iva_access">bb985597db8e8910e6cb93afaa96199c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="IVA Access Content Pack">bb985597db8e8910e6cb93afaa96199c</sys_scope>
+        <sys_update_name>sys_cs_topic_language_7cd6a9dfdbce8910e6cb93afaa96194d</sys_update_name>
+        <sys_updated_by>adminjon</sys_updated_by>
+        <sys_updated_on>2022-03-10 15:38:09</sys_updated_on>
+    </sys_cs_topic_language>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="IVA Access Content Pack">bb985597db8e8910e6cb93afaa96199c</application>
+        <file_path/>
+        <instance_id>85f207696f9e420056007b2f5d3ee415</instance_id>
+        <instance_name>saicdemo1</instance_name>
+        <name>sys_cs_topic_language_7cd6a9dfdbce8910e6cb93afaa96194d</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cs_topic_language"><sys_cs_topic_language action="INSERT_OR_UPDATE"><cs_topic_id display_value="Password Reset">f8d6a9dfdbce8910e6cb93afaa961948</cs_topic_id><language_code>en</language_code><nlu_entities>[{"variable_name":"intro","nlu_entity":"","nlu_entity_label":""},{"variable_name":"system","nlu_entity":"","nlu_entity_label":""},{"variable_name":"tbd","nlu_entity":"","nlu_entity_label":""},{"variable_name":"service_needed_yourself","nlu_entity":"","nlu_entity_label":""},{"variable_name":"not","nlu_entity":"","nlu_entity_label":""}]</nlu_entities><nlu_intent>ChangePassword</nlu_intent><nlu_intent_label>ChangePassword</nlu_intent_label><nlu_model>ml_sn_sn_pwdreset_va_global_f57d668f538220107cb0ddeeff7b12b9</nlu_model><nlu_model_label>[Read Only] Password Reset NLU Model</nlu_model_label><nlu_provider>64c023c17300330021a044764df6a70e</nlu_provider><sys_class_name>sys_cs_topic_language</sys_class_name><sys_created_by>adminjon</sys_created_by><sys_created_on>2022-03-10 15:38:09</sys_created_on><sys_domain>global</sys_domain><sys_id>7cd6a9dfdbce8910e6cb93afaa96194d</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="IVA Access Content Pack" source="x_saic4_iva_access">bb985597db8e8910e6cb93afaa96199c</sys_package><sys_policy/><sys_scope display_value="IVA Access Content Pack">bb985597db8e8910e6cb93afaa96199c</sys_scope><sys_update_name>sys_cs_topic_language_7cd6a9dfdbce8910e6cb93afaa96194d</sys_update_name><sys_updated_by>adminjon</sys_updated_by><sys_updated_on>2022-03-10 15:38:09</sys_updated_on></sys_cs_topic_language></record_update>]]></payload>
+        <payload_hash>-2146738509</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>48a8951bdb8e8910e6cb93afaa9619c1</source>
+        <source_table>sys_update_set</source_table>
+        <state>current</state>
+        <sys_created_by>adminjon</sys_created_by>
+        <sys_created_on>2022-03-10 15:38:09</sys_created_on>
+        <sys_id>f0d6a9dfdbce8910e6cb93afaa96194f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17f747af5980000001</sys_recorded_at>
+        <sys_updated_by>adminjon</sys_updated_by>
+        <sys_updated_on>2022-03-10 15:38:09</sys_updated_on>
+        <type>CS Topic Language</type>
+        <update_guid>f8d6a9df0dce8910d75c8f791bb6814e</update_guid>
+        <update_guid_history>f8d6a9df0dce8910d75c8f791bb6814e:-2146738509</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2022-03-11 03:49:42</sys_created_on>
+        <sys_db_object display_value="" name="sys_cs_topic_language">sys_cs_topic_language</sys_db_object>
+        <sys_id>0bd908c166654600a5e61ce6196bd104</sys_id>
+        <sys_metadata>7cd6a9dfdbce8910e6cb93afaa96194d</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="IVA Access Content Pack" source="x_saic4_iva_access">bb985597db8e8910e6cb93afaa96199c</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="IVA Access Content Pack">bb985597db8e8910e6cb93afaa96199c</sys_scope>
+        <sys_scope_delete display_value="">5e635d67f6ad4b27a37156c1b428fc11</sys_scope_delete>
+        <sys_update_name>sys_cs_topic_language_7cd6a9dfdbce8910e6cb93afaa96194d</sys_update_name>
+        <sys_update_version display_value="sys_cs_topic_language_7cd6a9dfdbce8910e6cb93afaa96194d">f0d6a9dfdbce8910e6cb93afaa96194f</sys_update_version>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2022-03-11 03:49:42</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sys_nlu_model_sys_entity">
+    <m2m_sys_nlu_model_sys_entity action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <entity>LOCATION</entity>
+        <model display_value="Grant Access">7c30ca4adbaa85d0e6cb93afaa9619b0</model>
+        <sys_class_name>m2m_sys_nlu_model_sys_entity</sys_class_name>
+        <sys_created_by>adminjon</sys_created_by>
+        <sys_created_on>2022-03-31 16:48:00</sys_created_on>
+        <sys_entity/>
+        <sys_id>38304e4adbaa85d0e6cb93afaa96198b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Grant Access.</sys_name>
+        <sys_package display_value="IVA Access Content Pack" source="x_saic4_iva_access">bb985597db8e8910e6cb93afaa96199c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="IVA Access Content Pack">bb985597db8e8910e6cb93afaa96199c</sys_scope>
+        <sys_update_name>m2m_sys_nlu_model_sys_entity_38304e4adbaa85d0e6cb93afaa96198b</sys_update_name>
+        <sys_updated_by>adminjon</sys_updated_by>
+        <sys_updated_on>2022-03-31 16:48:00</sys_updated_on>
+    </m2m_sys_nlu_model_sys_entity>
+</record_update>

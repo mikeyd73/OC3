@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_topic">
+    <sys_cb_topic action="INSERT_OR_UPDATE">
+        <applicability/>
+        <applicability_mode>query</applicability_mode>
+        <auto_resolution_enabled>false</auto_resolution_enabled>
+        <autopilot_topic>false</autopilot_topic>
+        <category/>
+        <channels/>
+        <connect_queue/>
+        <description>Unlock the account of a user.  You may only use this action if you are an administrator</description>
+        <expose_on_palette>false</expose_on_palette>
+        <flexible_conversation_switching>false</flexible_conversation_switching>
+        <graph>{
+  "graph_api_version": "1.0.36",
+  "goals": {
+    "primary": {
+      "id": "primary",
+      "trigger": {
+        "type": "primary"
+      },
+      "name": "primary",
+      "applicability": "",
+      "description": "",
+      "nodes": {
+        "2b17f9da36f142fbbe61a43f91f43c48": {
+          "id": "2b17f9da36f142fbbe61a43f91f43c48",
+          "stepType": "Start",
+          "name": "Start",
+          "greetingResponse": {
+            "mode": "simple",
+            "value": ""
+          }
+        },
+        "0fd0216eb9024618800b5c851d8ede0b": {
+          "id": "0fd0216eb9024618800b5c851d8ede0b",
+          "stepType": "TerminateGoal",
+          "name": "End",
+          "confirmationMessage": {
+            "mode": "simple",
+            "value": ""
+          }
+        },
+        "db09ead902f1477fa6e361f5bf13ae08": {
+          "stepType": "ReferenceChoicePrompt",
+          "name": "UserToUnlock",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Please choose a user to unlock"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "variableId": "b3136f5bcd314d8ca51b2a7cfd55dd5c",
+          "id": "db09ead902f1477fa6e361f5bf13ae08",
+          "mode": "glide_record",
+          "script": "",
+          "metadataScript": "",
+          "cardData": {},
+          "noRecordsResponseMsg": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "No users were found"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "condition": {
+            "mode": "glide_query",
+            "value": "active=true^locked_out=true"
+          },
+          "hasCardHeader": false,
+          "cardMetadata": {
+            "mode": "card",
+            "metadataScript": "",
+            "cardTemplate": "",
+            "cardFields": {},
+            "cardDefinition": {}
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false
+        },
+        "271737246d0f47d4abc37bd82a8a40bc": {
+          "id": "271737246d0f47d4abc37bd82a8a40bc",
+          "name": "Unlock Account",
+          "invocationType": "action",
+          "stepType": "FlowAction",
+          "actionSpoke": "61a9cb3ddb162300314873568c9619bf",
+          "actionSpokeAction": "05a0f94673872300a37f2c5ee2f6a780",
+          "actionWaitType": "sync",
+          "actionRunAs": "session_user",
+          "actionSecureField": false,
+          "actionSelectSecureField": "",
+          "actionPromptSecureField": {
+            "mode": "simple",
+            "value": ""
+          },
+          "actionConfirmPromptSecureField": {
+            "mode": "simple",
+            "value": ""
+          },
+          "actionNonSecureChannelMessage": {
+            "mode": "simple",
+            "value": ""
+          },
+          "actionInputs": {
+            "input-user_name": {
+              "value": "{{vaInputs.usertounlock}}",
+              "mode": "data_pill"
+            }
+          },
+          "actionOutputs": {
+            "output-status": [
+              {
+                "id": "c45e7704c5ed427da4e2662bd19f7679",
+                "mapping": "Status",
+                "value": "Status",
+                "disabled": false,
+                "type": "choice",
+                "choices": [
+                  {
+                    "label": "Success",
+                    "value": "Success",
+                    "order": 0
+                  },
+                  {
+                    "label": "Error",
+                    "value": "Error",
+                    "order": 1
+                  }
+                ]
+              }
+            ],
+            "output-error_message": [
+              {
+                "id": "308ac5f12de04dc8994ef9ecd1abbbff",
+                "mapping": "Error Message",
+                "value": "Error Message",
+                "disabled": false,
+                "type": "string"
+              }
+            ],
+            "output-__action_status__": [
+              {
+                "id": "f1f51cbc89dc4c87b6e09454791d27fb",
+                "mapping": "Action Status",
+                "value": "Action Status",
+                "disabled": false,
+                "type": "object"
+              }
+            ],
+            "output-__dont_treat_as_error__": [
+              {
+                "id": "ab4482eec91d436680e061b08888098b",
+                "mapping": "Don't Treat as Error",
+                "value": "Don't Treat as Error",
+                "disabled": false,
+                "type": "boolean"
+              }
+            ]
+          },
+          "actionDefinition": {
+            "id": "05a0f94673872300a37f2c5ee2f6a780",
+            "latest_snapshot_id": "05a0f94673872300a37f2c5ee2f6a780",
+            "type": "action",
+            "name": "unlock_account",
+            "label": "Unlock Account",
+            "scope_id": "61a9cb3ddb162300314873568c9619bf",
+            "description": "\n      &lt;html&gt;&lt;/html&gt;&lt;p&gt;Unlock a local ServiceNow user account&lt;/p&gt;\n      &lt;p&gt;&lt;b&gt;Inputs:&lt;/b&gt;\n      &lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;b&gt;User&lt;/b&gt; - User Record&lt;/li&gt;&lt;/ul&gt;\n      \n      &lt;p&gt;&lt;b&gt;Output:&lt;/b&gt;\n      &lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;b&gt;Status&lt;/b&gt; - Will be set to &amp;#39;Success&amp;#39; if the request succeeds or &amp;#39;Error&amp;#39; if a failure occurs.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Error Message&lt;/b&gt; - Reason for error. Populated only when an error occurs.&lt;/li&gt;&lt;/ul&gt;\n      \n      &lt;p&gt;&lt;b&gt;Error Messages:&lt;/b&gt;\n      &lt;/p&gt;&lt;ul&gt;&lt;li&gt;Invalid User Record&lt;/li&gt;&lt;/ul&gt;\n      \n      \n    ",
+            "category": "ServiceNow User Management",
+            "parameters_have_loaded": true,
+            "input_parameters": [
+              {
+                "supported_input_modes": [
+                  "script",
+                  "data_pill",
+                  "data_entry"
+                ],
+                "name": "user_name",
+                "label": "User",
+                "type": "reference",
+                "order": 1,
+                "required": true,
+                "query": "",
+                "table": "sys_user"
+              }
+            ],
+            "output_parameters": [
+              {
+                "name": "status",
+                "label": "Status",
+                "type": "choice",
+                "order": 1,
+                "required": false,
+                "choices": [
+                  {
+                    "label": "Success",
+                    "value": "Success",
+                    "order": 0
+                  },
+                  {
+                    "label": "Error",
+                    "value": "Error",
+                    "order": 1
+                  }
+                ]
+              },
+              {
+                "name": "error_message",
+                "label": "Error Message",
+                "type": "string",
+                "order": 2,
+                "required": false
+              },
+              {
+                "name": "__action_status__",
+                "label": "Action Status",
+                "type": "object",
+                "order": 2,
+                "required": false
+              },
+              {
+                "name": "__dont_treat_as_error__",
+                "label": "Don't Treat as Error",
+                "type": "boolean",
+                "order": 3,
+                "required": false
+              }
+            ]
+          },
+          "subflowSecureField": false,
+          "subflowSelectSecureField": "",
+          "subflowPromptSecureField": {
+            "mode": "simple",
+            "value": ""
+          },
+          "subflowConfirmPromptSecureField": {
+            "mode": "simple",
+            "value": ""
+          },
+          "subflowNonSecureChannelMessage": {
+            "mode": "simple",
+            "value": "This action is not supported on this channel."
+          },
+          "variableIds": [
+            "c45e7704c5ed427da4e2662bd19f7679",
+            "308ac5f12de04dc8994ef9ecd1abbbff",
+            "f1f51cbc89dc4c87b6e09454791d27fb",
+            "ab4482eec91d436680e061b08888098b"
+          ],
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        },
+        "71443c1008cc46a38b94a4ff544d270a": {
+          "stepType": "ChoicePrompt",
+          "name": "Title",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Do you want to unlock someone's account?"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "variableId": "bec36ded61dc4bbfaf32e2b0a54fa549",
+          "id": "71443c1008cc46a38b94a4ff544d270a",
+          "hasCardHeader": false,
+          "cardMetadata": {
+            "mode": "card",
+            "metadataScript": "",
+            "cardTemplate": "",
+            "cardFields": {},
+            "cardDefinition": {}
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false
+        },
+        "7c3cb819580b41bab5cdfa9c807a96e6": {
+          "id": "7c3cb819580b41bab5cdfa9c807a96e6",
+          "stepType": "Decision",
+          "name": "Decision"
+        }
+      },
+      "edges": [
+        {
+          "id": "ee4825122d934cab93f7893387f559cd",
+          "edgeType": "Edge",
+          "source": "db09ead902f1477fa6e361f5bf13ae08",
+          "target": "271737246d0f47d4abc37bd82a8a40bc",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "e2f4dc2df9124f17a2871c80bac70848",
+          "edgeType": "Edge",
+          "source": "271737246d0f47d4abc37bd82a8a40bc",
+          "target": "0fd0216eb9024618800b5c851d8ede0b",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "dac63620b2c349909459bf7f947b23cc",
+          "edgeType": "Edge",
+          "source": "2b17f9da36f142fbbe61a43f91f43c48",
+          "target": "71443c1008cc46a38b94a4ff544d270a",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "d358c45ce37b4436a2136542922de0c1",
+          "edgeType": "Edge",
+          "source": "71443c1008cc46a38b94a4ff544d270a",
+          "target": "7c3cb819580b41bab5cdfa9c807a96e6",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "73188d1bf8bb400382d8e88bd063eba5",
+          "edgeType": "Branch",
+          "source": "7c3cb819580b41bab5cdfa9c807a96e6",
+          "target": "0fd0216eb9024618800b5c851d8ede0b",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.title=No",
+            "mode": "query"
+          },
+          "label": "No"
+        },
+        {
+          "id": "e7ffda56130546ed83ed42b66ec332ed",
+          "edgeType": "Branch",
+          "source": "7c3cb819580b41bab5cdfa9c807a96e6",
+          "target": "db09ead902f1477fa6e361f5bf13ae08",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.title=Yes",
+            "mode": "query"
+          },
+          "label": "Yes"
+        }
+      ]
+    }
+  },
+  "variables": {
+    "current-user": {
+      "category": "vaInputs",
+      "id": "current-user",
+      "label": "User",
+      "name": "user",
+      "table": "sys_user",
+      "varType": "reference"
+    },
+    "b3136f5bcd314d8ca51b2a7cfd55dd5c": {
+      "id": "b3136f5bcd314d8ca51b2a7cfd55dd5c",
+      "name": "usertounlock",
+      "label": "UserToUnlock",
+      "varType": "reference",
+      "table": "sys_user",
+      "category": "vaInputs"
+    },
+    "c45e7704c5ed427da4e2662bd19f7679": {
+      "id": "c45e7704c5ed427da4e2662bd19f7679",
+      "name": "status",
+      "label": "Status",
+      "defaultValue": "Status",
+      "varType": "string",
+      "category": "vaInputs",
+      "metadata": {
+        "libraryMappingType": "output"
+      },
+      "choices": [
+        {
+          "label": "Success",
+          "value": "Success",
+          "order": 0
+        },
+        {
+          "label": "Error",
+          "value": "Error",
+          "order": 1
+        }
+      ]
+    },
+    "308ac5f12de04dc8994ef9ecd1abbbff": {
+      "id": "308ac5f12de04dc8994ef9ecd1abbbff",
+      "name": "error_message",
+      "label": "Error Message",
+      "defaultValue": "Error Message",
+      "varType": "string",
+      "category": "vaInputs",
+      "metadata": {
+        "libraryMappingType": "output"
+      }
+    },
+    "f1f51cbc89dc4c87b6e09454791d27fb": {
+      "id": "f1f51cbc89dc4c87b6e09454791d27fb",
+      "name": "action_status",
+      "label": "Action Status",
+      "defaultValue": "Action Status",
+      "varType": "object",
+      "category": "vaInputs",
+      "metadata": {
+        "libraryMappingType": "output"
+      }
+    },
+    "ab4482eec91d436680e061b08888098b": {
+      "id": "ab4482eec91d436680e061b08888098b",
+      "name": "don_t_treat_as_error",
+      "label": "Don't Treat As Error",
+      "defaultValue": "Don't Treat as Error",
+      "varType": "boolean",
+      "category": "vaInputs",
+      "metadata": {
+        "libraryMappingType": "output"
+      }
+    },
+    "bec36ded61dc4bbfaf32e2b0a54fa549": {
+      "id": "bec36ded61dc4bbfaf32e2b0a54fa549",
+      "name": "title",
+      "label": "Title",
+      "varType": "choice",
+      "choices": [
+        {
+          "label": "Yes",
+          "value": "Yes"
+        },
+        {
+          "label": "No",
+          "value": "No",
+          "checked": true
+        }
+      ],
+      "category": "vaInputs"
+    }
+  }
+}</graph>
+        <key_phrases>Unlock account</key_phrases>
+        <library>false</library>
+        <live_agent>false</live_agent>
+        <name>Unlock account</name>
+        <nlu_intent/>
+        <nlu_intent_label/>
+        <nlu_model/>
+        <nlu_model_label/>
+        <nlu_provider/>
+        <palette_label/>
+        <roles>workspace_admin</roles>
+        <secure_custom_input_control>false</secure_custom_input_control>
+        <source_topic_id/>
+        <sys_class_name>sys_cb_topic</sys_class_name>
+        <sys_created_by>adminjon</sys_created_by>
+        <sys_created_on>2022-03-17 18:45:31</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>f5d4522d1b92895055d178cf034bcbc2</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>Unlock account</sys_name>
+        <sys_package display_value="IVA Access Content Pack" source="x_saic4_iva_access">bb985597db8e8910e6cb93afaa96199c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="IVA Access Content Pack">bb985597db8e8910e6cb93afaa96199c</sys_scope>
+        <sys_update_name>sys_cb_topic_f5d4522d1b92895055d178cf034bcbc2</sys_update_name>
+        <sys_updated_by>adminjon</sys_updated_by>
+        <sys_updated_on>2022-03-23 14:57:46</sys_updated_on>
+        <triggerable_by_notification>false</triggerable_by_notification>
+        <type>STANDARD</type>
+        <variables/>
+    </sys_cb_topic>
+    <sys_variable_value action="delete_multiple" query="document_key=f5d4522d1b92895055d178cf034bcbc2"/>
+</record_update>
